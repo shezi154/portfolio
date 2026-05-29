@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Shahbaz | Data Analyst & E-commerce Expert</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Animated background canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>MS<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+      <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-tag"><span class="dot"></span> Available for Projects</div>
+        <h1 class="hero-name">
+          <span class="line1">Muhammad</span>
+          <span class="line2">Shahbaz</span>
+        </h1>
+        <div class="hero-title">
+          <span class="typed-text" id="typed-text"></span><span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-bio">
+          Passionate Data Analyst and E-commerce Expert skilled in transforming data into actionable business insights and profitable online strategies.
+        </p>
+        <div class="hero-location">
+          <i class="fas fa-map-marker-alt"></i> Multan, Pakistan
+        </div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#cv-download" class="btn btn-secondary">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/muhammad-shahbaz-b99149248" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/chshahbaz.12" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:shezich60@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="profile-frame">
+          <div class="frame-corner tl"></div>
+          <div class="frame-corner tr"></div>
+          <div class="frame-corner bl"></div>
+          <div class="frame-corner br"></div>
+          <div class="profile-img-wrapper">
+            <!-- REPLACE src WITH YOUR ACTUAL IMAGE PATH e.g. src="profile.jpg" -->
+            <img src="profile.jpg.jpeg" alt="Muhammad Shahbaz" class="profile-img" id="profile-img" onerror="this.style.display='none'; document.getElementById('profile-placeholder').style.display='flex'"/>
+            <div class="profile-placeholder" id="profile-placeholder">
+              <i class="fas fa-user"></i>
+              <span>Add profile.jpg</span>
+            </div>
+          </div>
+          <div class="profile-glow"></div>
+          <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+          <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="section-header">
+      <span class="section-num">01.</span>
+      <h2>About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a <span class="highlight">Data Analyst</span> and <span class="highlight">E-commerce Expert</span> based in Multan, Pakistan. I specialize in transforming raw data into clear, actionable insights that drive business growth.</p>
+        <p>With hands-on experience in <span class="highlight">Power BI dashboards</span>, E-commerce store management (Daraz & Amazon FBA/FBM), and data visualization, I combine analytical thinking with digital business strategy.</p>
+        <p>Dedicated to helping businesses grow through <span class="highlight">data-driven decision making</span> and digital innovation.</p>
+        <div class="about-stats">
+          <div class="stat-card reveal">
+            <div class="stat-num" data-target="3">0</div>
+            <div class="stat-label">Projects Done</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-num" data-target="2">0</div>
+            <div class="stat-label">Internships</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-num" data-target="10">0</div>
+            <div class="stat-label">Skills</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-card reveal">
+        <div class="card-inner">
+          <div class="info-row"><i class="fas fa-user"></i><span>Muhammad Shahbaz</span></div>
+          <div class="info-row"><i class="fas fa-briefcase"></i><span>Data Analyst & E-commerce Expert</span></div>
+          <div class="info-row"><i class="fas fa-map-marker-alt"></i><span>Multan, Punjab, Pakistan</span></div>
+          <div class="info-row"><i class="fas fa-envelope"></i><span>shezich60@gmail.com</span></div>
+          <div class="info-row"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/muhammad-shahbaz-b99149248" target="_blank">LinkedIn Profile</a></div>
+          <div class="info-row"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/chshahbaz.12" target="_blank">@chshahbaz.12</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills" id="skills">
+    <div class="section-header">
+      <span class="section-num">02.</span>
+      <h2>Skills & Tools</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal" data-skill="Power BI">
+        <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+        <div class="skill-name">Power BI</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-card reveal" data-skill="Python">
+        <div class="skill-icon"><i class="fab fa-python"></i></div>
+        <div class="skill-name">Python</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-card reveal" data-skill="MySQL">
+        <div class="skill-icon"><i class="fas fa-database"></i></div>
+        <div class="skill-name">MySQL</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-card reveal" data-skill="MS Excel">
+        <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+        <div class="skill-name">MS Excel / Office</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+      </div>
+      <div class="skill-card reveal" data-skill="HTML/CSS">
+        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+        <div class="skill-name">HTML / CSS</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-card reveal" data-skill="Data Visualization">
+        <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+        <div class="skill-name">Data Visualization</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+      </div>
+      <div class="skill-card reveal" data-skill="Canva">
+        <div class="skill-icon"><i class="fas fa-palette"></i></div>
+        <div class="skill-name">Canva</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-card reveal" data-skill="E-commerce">
+        <div class="skill-icon"><i class="fas fa-shopping-cart"></i></div>
+        <div class="skill-name">E-commerce (Amazon/Daraz)</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="87"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects" id="projects">
+    <div class="section-header">
+      <span class="section-num">03.</span>
+      <h2>Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="project-links">
+            <span class="project-tag">Power BI</span>
+          </div>
+        </div>
+        <h3 class="project-title">NBC Pepsi Sales Dashboard</h3>
+        <p class="project-desc">Developed an interactive Sales Dashboard during my internship at NBC Pepsi using Power BI. The dashboard provided insights into sales performance, product trends, and regional analysis through data visualization and reporting. Helped improve decision-making by presenting clear and organized business data.</p>
+        <div class="project-tech">
+          <span>Power BI</span>
+          <span>SQL</span>
+          <span>Excel</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-music"></i></div>
+          <div class="project-links">
+            <span class="project-tag">Excel</span>
+          </div>
+        </div>
+        <h3 class="project-title">Spotify Music Insight Dashboard</h3>
+        <p class="project-desc">Built a comprehensive music analytics dashboard in Microsoft Excel using Pivot Tables, data cleaning techniques, and interactive charts to visualize Spotify music trends, top artists, and listening patterns.</p>
+        <div class="project-tech">
+          <span>Excel</span>
+          <span>Pivot Tables</span>
+          <span>Charts</span>
+          <span>Data Cleaning</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-store"></i></div>
+          <div class="project-links">
+            <span class="project-tag">E-commerce</span>
+          </div>
+        </div>
+        <h3 class="project-title">Daraz E-commerce Store</h3>
+        <p class="project-desc">Founded and managed a self-employed E-commerce store on Daraz. Handled product listing, order management, customer engagement, pricing strategy, and sales growth using data-driven decisions and market analysis.</p>
+        <div class="project-tech">
+          <span>Daraz</span>
+          <span>Market Analysis</span>
+          <span>Data Strategy</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section experience" id="experience">
+    <div class="section-header">
+      <span class="section-num">04.</span>
+      <h2>Experience</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Jul 2025 – Aug 2025</div>
+          <h3>IT Intern</h3>
+          <h4><i class="fas fa-building"></i> NBC Pepsi — Multan</h4>
+          <p>Worked as an IT Intern for 2 months. Developed the NBC Sales Dashboard using Power BI, providing insights into sales performance, product trends, and regional analysis to support business decision-making.</p>
+          <div class="timeline-tags"><span>Power BI</span><span>SQL</span><span>Data Analysis</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Jan 2026 – Feb 2026</div>
+          <h3>Cyber Security Intern (Remote)</h3>
+          <h4><i class="fas fa-shield-alt"></i> Arch Technologies</h4>
+          <p>Completed a remote cyber security internship, gaining practical knowledge in digital security practices, vulnerability assessment, and network protection strategies.</p>
+          <div class="timeline-tags"><span>Cyber Security</span><span>Remote</span><span>Network Security</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Nov 2024 – Apr 2025 (6 months)</div>
+          <h3>Amazon FBA/FBM Manager</h3>
+          <h4><i class="fab fa-amazon"></i> Amazon Software House</h4>
+          <p>Managed Amazon seller accounts handling both FBA (Fulfilled by Amazon) and FBM (Fulfilled by Merchant) operations. Responsible for product listings, account health, inventory management, and sales optimization.</p>
+          <div class="timeline-tags"><span>Amazon FBA</span><span>FBM</span><span>Account Management</span><span>eCommerce</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Self-Employed</div>
+          <h3>E-commerce Store Owner</h3>
+          <h4><i class="fas fa-store"></i> Daraz — Self-Employed</h4>
+          <p>Founded and independently managed a Daraz E-commerce store. Handled all aspects from product sourcing, listing optimization, customer service, and sales analytics to grow the business.</p>
+          <div class="timeline-tags"><span>Daraz</span><span>E-commerce</span><span>Business Owner</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section education" id="education">
+    <div class="section-header">
+      <span class="section-num">05.</span>
+      <h2>Education</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="edu-grid">
+
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="fas fa-university"></i></div>
+        <div class="edu-info">
+          <span class="edu-year">2022 – Present</span>
+          <h3>BS Computer Science</h3>
+          <h4>NFC-IET Multan</h4>
+          <p>Bachelor's degree in Computer Science — currently continuing studies with focus on data analytics and software development.</p>
+        </div>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="fas fa-school"></i></div>
+        <div class="edu-info">
+          <span class="edu-year">2020 – 2022</span>
+          <h3>Intermediate (FSc)</h3>
+          <h4>KIPS College Multan</h4>
+          <p>Completed intermediate education with a strong academic foundation.</p>
+        </div>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-info">
+          <span class="edu-year">2020</span>
+          <h3>Matriculation</h3>
+          <h4>Nishat High School For Boys SRA — Multan</h4>
+          <p>Completed secondary education with solid academic performance.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CV DOWNLOAD ===== -->
+  <section class="section cv-section" id="cv-download">
+    <div class="cv-box reveal">
+      <div class="cv-left">
+        <i class="fas fa-file-alt cv-file-icon"></i>
+        <div>
+          <h3>Download My CV</h3>
+          <p>Get a full overview of my skills, experience & education</p>
+        </div>
+      </div>
+      <!-- REPLACE href WITH YOUR ACTUAL CV FILE e.g. href="Muhammad_Shahbaz_CV.pdf" -->
+      <a href="Muhammad_Shahbaz_CV.pdf.pdf" download class="btn btn-primary cv-btn">
+        <i class="fas fa-download"></i> Download CV (PDF)
+      </a>
+    </div>
+    
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="section-header">
+      <span class="section-num">06.</span>
+      <h2>Get In Touch</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Let's work together</h3>
+        <p>Whether you have a data project, eCommerce challenge, or just want to connect — my inbox is always open!</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:shezich60@gmail.com">shezich60@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span>Multan, Punjab, Pakistan</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/muhammad-shahbaz-b99149248" target="_blank">Muhammad Shahbaz</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+            <div>
+              <span class="contact-label">Instagram</span>
+              <a href="https://www.instagram.com/chshahbaz.12" target="_blank">@chshahbaz.12</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrapper reveal">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required/>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required/>
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject"/>
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="send-btn">
+            <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="form-success">✅ Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo"><span class="logo-bracket">&lt;</span>MS<span class="logo-bracket">/&gt;</span></div>
+      <p>© 2025 Muhammad Shahbaz.</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/muhammad-shahbaz-b99149248" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/chshahbaz.12" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:shezich60@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
